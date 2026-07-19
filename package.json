@@ -1,0 +1,25 @@
+{
+  "name": "codex-plugin-kimi",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Delegate isolated coding tasks from Codex to Kimi Code over ACP.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check plugins/kimi/src/server.mjs && node --check plugins/kimi/src/runtime/manager.mjs && node --check plugins/kimi/src/runtime/acp-worker.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node scripts/validate-plugin.mjs"
+  },
+  "dependencies": {
+    "@agentclientprotocol/sdk": "0.23.0",
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "kimi-companion": {
+      "cwd": ".",
+      "command": "node",
+      "args": ["./dist/server.mjs"]
+    }
+  }
+}

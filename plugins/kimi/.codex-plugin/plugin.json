@@ -1,0 +1,29 @@
+{
+  "name": "kimi",
+  "version": "0.1.0",
+  "description": "Delegate isolated coding tasks from Codex to Kimi Code over ACP, then review the resulting Git checkpoints.",
+  "author": {
+    "name": "woodongwong",
+    "url": "https://github.com/woodongwong"
+  },
+  "homepage": "https://github.com/woodongwong/codex-plugin-kimi",
+  "repository": "https://github.com/woodongwong/codex-plugin-kimi",
+  "license": "MIT",
+  "keywords": ["kimi", "acp", "delegation", "parallel-agents", "code-review"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Kimi Companion",
+    "shortDescription": "Delegate parallel coding tasks to Kimi Code",
+    "longDescription": "Use Kimi Code as a background implementation worker while Codex remains the supervisor and independent reviewer. Write jobs run in isolated Git worktrees and return compact structured handoffs instead of full transcripts.",
+    "developerName": "woodongwong",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Write", "Interactive"],
+    "websiteURL": "https://github.com/woodongwong/codex-plugin-kimi",
+    "defaultPrompt": [
+      "Delegate a bounded implementation task to Kimi",
+      "Run several independent Kimi tasks in parallel",
+      "Ask Kimi for a second code review"
+    ]
+  }
+}
