@@ -1,0 +1,5 @@
+{
+  "name": "codex-zcode-supervisor-bridge",
+  "version": "0.1.0",
+  "description": "Persist ZCode lifecycle events and inject takeover context for the Codex/ZCode supervisor."
+}
